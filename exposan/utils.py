@@ -352,6 +352,33 @@ def run_uncertainty(model, seed=None, N=1000, rule='L',
 
 # Example input dict for country-specific analysis
 general_country_specific_inputs = {
+    'France': {
+        'energy_GWP': 0.124,
+        'energy_H_Ecosystems': 0.002336342,
+        'energy_H_Health': 0.037590269,
+        'energy_H_Resources': 0.02714852,
+        'energy_price': 0.213,
+        'wages':2.41,  # MURT labor wage USD/hour
+        'operator_daily_wage': 2.41,  # USD/day
+        'const_wage': 2.41,  # USD/day
+        'certified_electrician_wages': 2.41,  # USD/hour
+        'service_team_wages': 2.41,  # USD/hour
+        'facility_manager_wages': 2.41,  # USD/hour
+        'biomass_controls_wages': 2.41,  # USD/hour
+        'e_cal': 2497,
+        'p_anim': 71.3,
+        'p_veg': 44,
+        'food_waste_ratio': 0.21,
+        'price_ratio': 0.610,
+        'household_size': 2.2,
+        'N_fertilizer_price': 0.939,
+        'P_fertilizer_price': 1.744,
+        'K_fertilizer_price': 1.119,
+        'NH3_fertilizer_price': 0.939*(14/17),
+        'struvite_fertilizer_price': 1.744*(31/245),
+        'NaCl_price': 0.35,  # for NEWgen
+        'LPG_price': 0.954  # for NEWgen
+        },
     'China': {
         'energy_GWP': 0.745,
         'energy_H_Ecosystems': 0.002336342,
